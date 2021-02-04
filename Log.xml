@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<LVData xmlns="http://www.ni.com/LVData">
+	<Version>20.0</Version>
+	<Cluster>
+		<Name>Setting</Name>
+		<NumElts>3</NumElts>
+		<String>
+			<Name>Msg Pattern</Name>
+			<Val>[ $Time ] [ $Level ] [ $Caller ] : $Msg</Val>
+		</String>
+		<String>
+			<Name>Time Format</Name>
+			<Val>%Y/%m/%d %H:%M:%S</Val>
+		</String>
+		<Array>
+			<Name>Logges</Name>
+			<Dimsize>2</Dimsize>
+			<Cluster>
+				<Name>Logger</Name>
+				<NumElts>2</NumElts>
+				<String>
+					<Name>Log Option</Name>
+					<Val>Console Logger</Val>
+				</String>
+				<EW>
+					<Name>Log Level</Name>
+					<Choice>Debug</Choice>
+					<Choice>Info</Choice>
+					<Choice>Warn</Choice>
+					<Choice>Error</Choice>
+					<Val>1</Val>
+				</EW>
+			</Cluster>
+			<Cluster>
+				<Name>Logger</Name>
+				<NumElts>2</NumElts>
+				<String>
+					<Name>Log Option</Name>
+					<Val>File Logger</Val>
+				</String>
+				<EW>
+					<Name>Log Level</Name>
+					<Choice>Debug</Choice>
+					<Choice>Info</Choice>
+					<Choice>Warn</Choice>
+					<Choice>Error</Choice>
+					<Val>1</Val>
+				</EW>
+			</Cluster>
+		</Array>
+	</Cluster>
+</LVData>
